@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Práctico 1 - Maquetando con Flexbox</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- SECCIÓN 1: CABECERA / NAVEGACIÓN (Alineación horizontal y vertical) -->
+  <header class="navbar">
+    <div class="logo">MiSketchWeb</div>
+    <nav class="nav-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN 2: CONTENIDO PRINCIPAL (Diseño tipo sketch: Hero + Tarjeta centrada) -->
+  <main id="inicio" class="contenedor-principal">
+    <section class="hero-box">
+      <h1>Maquetación con Flexbox</h1>
+      <p>Ejemplo de alineación horizontal, vertical y distribución adaptable.</p>
+    </section>
+
+    <!-- Caja centrada tanto en eje horizontal como vertical -->
+    <section class="zona-centrada">
+      <div class="tarjeta-destacada">
+        <h2>Elemento Centrado</h2>
+        <p>Centrado exacto usando justify-content y align-items.</p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: GALERÍA DE PRODUCTOS / IMÁGENES CON FLEXBOX -->
+    <section id="galeria" class="seccion-galeria">
+      <h2>Galería de Productos</h2>
+      <div class="galeria-flex">
+        <article class="card-producto">
+          <div class="img-placeholder">Producto 1</div>
+          <h3>Producto Alfa</h3>
+          <p>Descripción breve del artículo 1.</p>
+          <span class="precio">$12.500</span>
+        </article>
+
+        <article class="card-producto">
+          <div class="img-placeholder">Producto 2</div>
+          <h3>Producto Beta</h3>
+          <p>Descripción breve del artículo 2.</p>
+          <span class="precio">$18.000</span>
+        </article>
+
+        <article class="card-producto">
+          <div class="img-placeholder">Producto 3</div>
+          <h3>Producto Gamma</h3>
+          <p>Descripción breve del artículo 3.</p>
+          <span class="precio">$24.300</span>
+        </article>
+
+        <article class="card-producto">
+          <div class="img-placeholder">Producto 4</div>
+          <h3>Producto Delta</h3>
+          <p>Descripción breve del artículo 4.</p>
+          <span class="precio">$15.900</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- SECCIÓN 4: PIE DE PÁGINA -->
+  <footer id="contacto" class="footer-flex">
+    <p>Práctico 1 - Flexbox</p>
+    <p>Publicado con GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
